@@ -9,6 +9,16 @@ frutaDois.innerHTML += frutas[1];
 const frutaTres = document.getElementById("fruta-3");
 frutaTres.innerHTML += frutas[2];
 
-const frutaQuatro = document.getElementById("fruta-4");
-frutaQuatro.innerHTML += frutas[3];
+// const frutaQuatro = document.getElementById("fruta-4");
+// frutaQuatro.innerHTML += frutas[3];
 
+const valorDoInput = document.getElementById("fruta-input");
+const frutaQuatro = document.getElementById("fruta-4");
+
+function lidarInput(){
+    console.log(valorDoInput.value);
+}
+function lidarBotao(){
+    frutaQuatro.innerHTML = valorDoInput.value;
+    valorDoInput.value = ""
+}
